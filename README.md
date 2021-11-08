@@ -10,8 +10,10 @@ pip3 install pyevtk
 python3 stl_to_vtk_voxelization.py
 ~~~
 
+## before
 ![before](stl.png)
 
+## after
 ![after](voxel.png)
 
 
