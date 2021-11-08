@@ -10,9 +10,9 @@ pip3 install pyevtk
 python3 stl_to_vtk_voxelization.py
 ~~~
 
-[before](stl.png)
+![before](stl.png)
 
-[after](voxel.png)
+![after](voxel.png)
 
 
 The stl model was referred to [here](https://github.com/thsmit/TopOpt_in_PETSc_wrapped_in_Python).
