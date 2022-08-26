@@ -10,11 +10,11 @@ filename_in = "jetEngineDesignDomainFine.stl"
 # export vtk
 filename_out = "out.vtk"
 # mesh resolution
-mesh_size = 100
+mesh_size = 200
 # tolerance(about 10^-7~10^-3，smaller value is high accuracy.)
 tol = 1e-7
 # kind of voxel（"cubic" or "rect"）
-cubicORrect = "rect"
+cubicORrect = "cubic"
 ##################################
 
 # main routine start
@@ -87,8 +87,7 @@ threshold = vtk.vtkThreshold()
 threshold.SetInputArrayToProcess(
     0, 0, 0, vtk.vtkDataObject.FIELD_ASSOCIATION_CELLS, "SelectedPoints")
 threshold.SetInputData(structured_base_mesh)
-threshold.SetLowerThreshold(1)  # (min, max) = (1, 1)
-threshold.SetUpperThreshold(1)
+threshold.ThresholdBetween(1, 1)
 threshold.Update()
 
 # export vtk(legacy, ascii)
