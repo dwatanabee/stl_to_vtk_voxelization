@@ -23,6 +23,6 @@ The stl model was referred to [here](https://github.com/thsmit/TopOpt_in_PETSc_w
 https://qiita.com/dwatanabee/items/b938b46ef911a43b92ba
 
 
-# LICENCE
+## LICENCE
 
 stl file is "GNU Lesser General Public License v2.1", and the others are MIT.
